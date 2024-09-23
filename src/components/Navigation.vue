@@ -16,7 +16,7 @@
     left: 0;
 
     width: 100vw;
-    height: 10vh;
+    height: var(--navigation-height);
 
     font-family: var(--serif-font);
     letter-spacing: 2px;
@@ -29,7 +29,7 @@
 
     background-color: var(--light-beige);
     color: black;
-    padding-left: 1vw;
+    /* padding-left: 1vw; */
 }
 
 .logo {

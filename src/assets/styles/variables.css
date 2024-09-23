@@ -8,4 +8,11 @@
     --light-beige: #efe8de;
 
     --serif-font: "Playfair Display", serif;
+
+    --navigation-height: 10vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
 }

@@ -5,10 +5,21 @@ import Navigation from './components/Navigation.vue';
 <template>
   <div>
     <Navigation />
-    <router-view></router-view>
+    <div class="page-body">
+      <router-view class="router-page-body"></router-view>
+    </div>
   </div>
 </template>
 
 <style>
 @import './assets/styles/variables.css';
+
+.page-body {
+  margin: 0;
+  width: 100vw;
+}
+
+.router-page-body {
+  margin-top: var(--navigation-height);
+}
 </style>
