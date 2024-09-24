@@ -17,6 +17,8 @@ import Navigation from './components/Navigation.vue';
 .page-body {
   margin: 0;
   width: 100vw;
+  height: calc(100vh - var(--navigation-height));
+  margin-top: var(--navigation-height);
 }
 
 .router-page-body {
