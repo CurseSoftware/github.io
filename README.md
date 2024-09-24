@@ -1,5 +1,8 @@
-# Vue 3 + TypeScript + Vite
+## github.io
+This is the source code for the Raven Software Foundation website!
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is a Vue.js project using Vite as the build system.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## For development
+Run the typical `npm install` followed by `npm run dev` and follow the link on localhost 
+that it gives you to see it!
