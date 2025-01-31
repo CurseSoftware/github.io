@@ -4,8 +4,8 @@
 
 <template>
     <div class="outer-container">
-        <img src="../assets/raven.png" class="logo"/>
-        <router-link to="/" class="title">RAVEN SOFTWARE FOUNDATION</router-link>
+        <img src="../assets/curse.jpg" class="logo"/>
+        <router-link to="/" class="title">URSE SOFTWARE</router-link>
         <!-- <router-link to="/software" class="page-link">SOFTWARE</router-link> -->
         <router-link to="/members" class="page-link">MEMBERS</router-link>
         <div class="info-box">
@@ -35,23 +35,27 @@
     flex-direction: row;
     align-items: center;
 
-    background-color: var(--light-beige);
+    background-color: var(--dark-blue);
+    /* background-color: var(--light-beige); */
     /* color: black; */
     /* padding-left: 1vw; */
 }
 
 .logo {
-    max-width: 4vw;
+    max-width: 3.5vw;
+    margin-right: -5px;
 }
 
 .icon-link {
     text-decoration: none;
-    color: var(--dark-brown);
+    color: #fefefe;
+    /* color: var(--dark-brown); */
 }
 
 .title {
-    color: var(--dark-brown);
+    color: var(--text);
     text-decoration: none;
+    font-family: var(--logo-font);
 }
 
 .page-link {
@@ -69,14 +73,15 @@
     font-size: 0.8em;
     text-decoration: underline;
     
-    color: var(--dark-brown);
+    /* color: var(--dark-brown); */
+    color: var(--text);
     
     transition: 100ms ease;
 }
 
 .page-link:hover {
     transition: 100ms ease;
-    background-color: var(--beige);
+    background-color: var(--light-blue);
 }
 
 .info-box {

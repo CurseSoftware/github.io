@@ -1,4 +1,14 @@
 <script setup lang="ts">
+import { defineComponent } from 'vue';
+import * as THREE from 'three';
+
+const ThreeComp = defineComponent({
+    name: '3DComponent',
+    setup() {
+        
+    }
+})
+
 </script>
 
 <template>
@@ -22,13 +32,13 @@
             </div>
             <div class="software-content-grid">
                 <div class="software-grid-item">
-                    <h2>Vinyl Lang</h2>
+                    <h2 style="font-weight: 450;">Vinyl Lang</h2>
                     <p>A programming language that emulates the syntax and type system of Rust without the memory constraints.</p>
                     <p>This exposes raw pointers, allocators, and other things of use in C/C++ that are not easily accessible in Rust.</p>
                     <p>Vinyl is a compiler and build system. Similar to Cargo from Rust. Undecidedly it may eventually become a package manager like Cargo as well.</p>
                 </div>
                 <div class="software-grid-item">
-                    <h2>Mercury</h2>
+                    <h2 style="font-weight: 450;">Mercury</h2>
                     <p>A web frontend library for C++ to build web applications.</p>
                     <p>Uses a React-like component system for structuring pages.</p>
                 </div>
@@ -48,6 +58,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    background-color: var(--dark-blue);
 }
 
 .text-box {
@@ -57,6 +68,7 @@
     font-family: var(--serif-font);
 
     margin-top: 4vh;
+    font-weight: 300;
 
     /* outline-width: thin;
     outline-color: red;
@@ -90,10 +102,12 @@
     border-radius: 10px;
     padding: 1% 2% 1% 2%;
     transition: 100ms ease-out;
+    font-weight: 300;
 }
 
 .software-grid-item:hover {
-    background-color: var(--beige);
+    background-color: var(--light-blue);
+    /* background-color: var(--beige); */
     transition: 100ms ease-in;
 }
 

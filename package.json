@@ -12,10 +12,12 @@
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/vue-fontawesome": "^3.0.8",
+    "three": "^0.168.0",
     "vue": "^3.4.37",
     "vue-router": "^4.0.13"
   },
   "devDependencies": {
+    "@types/three": "^0.168.0",
     "@vitejs/plugin-vue": "^5.1.2",
     "typescript": "^5.5.3",
     "vite": "^5.4.1",
