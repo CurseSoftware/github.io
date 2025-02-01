@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { defineComponent } from 'vue';
-import * as THREE from 'three';
 
 const ThreeComp = defineComponent({
     name: '3DComponent',
@@ -31,24 +30,37 @@ const ThreeComp = defineComponent({
                 <div class="title-underline"></div>
             </div>
             <div class="software-content-grid">
-                <div class="software-grid-item">
-                    <h2 style="font-weight: 450;">Vinyl Lang</h2>
-                    <p>A programming language that emulates the syntax and type system of Rust without the memory constraints.</p>
-                    <p>This exposes raw pointers, allocators, and other things of use in C/C++ that are not easily accessible in Rust.</p>
-                    <p>Vinyl is a compiler and build system. Similar to Cargo from Rust. Undecidedly it may eventually become a package manager like Cargo as well.</p>
-                </div>
-                <div class="software-grid-item">
-                    <h2 style="font-weight: 450;">Mercury</h2>
-                    <p>A web frontend library for C++ to build web applications.</p>
-                    <p>Uses a React-like component system for structuring pages.</p>
-                </div>
+                <router-link to="/engine" class="page-link">
+                    <div class="software-grid-item">
+                        <h2 style="font-weight: 450;">Curse Engine</h2>
+                        <p>Cross platform game engine for building 2D and 3D games.</p>
+                        <p>Multiplayer support and can target Windows and Linux. Further support is coming soon!</p>
+                        <p>C++/C API for creating scenes and/or games alongside an Editor application.</p>
+                        <p>Configurable render pipeline for adding custom shading effects and compute tasks.</p>
+                    </div>
+                </router-link>
+                <router-link to="/vinyl" class="page-link">
+                    <div class="software-grid-item">
+                        <h2 style="font-weight: 450;">Vinyl Lang</h2>
+                        <p>A programming language that emulates the syntax and type system of Rust without the memory constraints.</p>
+                        <p>This exposes raw pointers, allocators, and other things of use in C/C++ that are not easily accessible in Rust.</p>
+                        <p>Vinyl is a compiler and build system. Similar to Cargo from Rust. Undecidedly it may eventually become a package manager like Cargo as well.</p>
+                    </div>
+                </router-link>
+                <router-link to="/mercury" class="page-link">
+                    <div class="software-grid-item">
+                        <h2 style="font-weight: 450;">Mercury</h2>
+                        <p>A web frontend library for C++ to build web applications.</p>
+                        <p>Uses a React-like component system for structuring pages.</p>
+                    </div>
+                </router-link>
             </div>
         </div>
     </div>
 </template>
 
 <style scoped>
-@import '../../assets/styles/variables.css';
+@import '../../../assets/styles/variables.css';
 
 .container {
     width: 100%;
@@ -59,6 +71,11 @@ const ThreeComp = defineComponent({
     align-items: center;
     justify-content: flex-start;
     background-color: var(--dark-blue);
+}
+
+.page-link {
+    text-decoration: none;
+    color: var(--text);
 }
 
 .text-box {
@@ -86,8 +103,9 @@ const ThreeComp = defineComponent({
 }
 
 .title-underline {
-    height: 2px;
-    background-color: var(--dark-brown);
+    height: 1px;
+    background-color: gray;
+    /* background-color: var(--dusty-pink); */
 }
 
 .software-content-grid {
