@@ -7,10 +7,16 @@
     --dusty-pink: #CEB1A7;
     --light-beige: #efe8de;
     --beige: #e9ddcb;
+    --text: #fefefe;
+    --dark-blue: #141623;
+    --light-blue: #22253d;
 
     --dark-brown: #2f2722;
 
-    --serif-font: "Playfair Display", serif;
+    /* --serif-font: "Playfair Display", serif; */
+    --serif-font: "Lato", serif;
+    /* --logo-font: "Rubik Glitch", serif; */
+    --logo-font: "Neucha", serif;
 
     --navigation-height: 10vh;
 }

@@ -4,12 +4,14 @@
 
 <template>
     <div class="outer-container">
-        <img src="../assets/raven.png" class="logo"/>
-        <router-link to="/" class="title">RAVEN SOFTWARE FOUNDATION</router-link>
+        <router-link to="/" class="title">
+            <img src="../assets/curse.jpg" class="logo"/>
+            URSE SOFTWARE
+        </router-link>
         <!-- <router-link to="/software" class="page-link">SOFTWARE</router-link> -->
         <router-link to="/members" class="page-link">MEMBERS</router-link>
         <div class="info-box">
-            <a target="_blank" href="https://github.com/RavenSoftLabs" class="icon-link">
+            <a target="_blank" href="https://github.com/CurseSoftware" class="icon-link">
                 <font-awesome-icon :icon="['fab', 'github']" size="xl"/>
             </a>
         </div>
@@ -35,23 +37,31 @@
     flex-direction: row;
     align-items: center;
 
-    background-color: var(--light-beige);
+    background-color: var(--dark-blue);
+    /* background-color: var(--light-beige); */
     /* color: black; */
     /* padding-left: 1vw; */
 }
 
 .logo {
-    max-width: 4vw;
+    max-width: 3.5vw;
+    margin-right: -0.5rem;
 }
 
 .icon-link {
     text-decoration: none;
-    color: var(--dark-brown);
+    color: #fefefe;
+    /* color: var(--dark-brown); */
 }
 
 .title {
-    color: var(--dark-brown);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--text);
     text-decoration: none;
+    font-family: var(--logo-font);
+    /* font-weight: 200; */
 }
 
 .page-link {
@@ -66,17 +76,21 @@
 
     margin-left: 2vw;
     
-    font-size: 0.8em;
+    font-size: 0.7em;
     text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 3px;
     
-    color: var(--dark-brown);
+    /* color: var(--dark-brown); */
+    color: var(--text);
+    font-weight: 300;
     
     transition: 100ms ease;
 }
 
 .page-link:hover {
     transition: 100ms ease;
-    background-color: var(--beige);
+    background-color: var(--light-blue);
 }
 
 .info-box {

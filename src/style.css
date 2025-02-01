@@ -6,8 +6,9 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: var(--dark-brown);
-  background-color: var(--light-beige);
+  color: var(--text);
+  /* color: var(--dark-brown); */
+  background-color: var(--dark-blue);
   font-family: var(--serif-font);
 
   font-synthesis: none;
@@ -59,7 +60,8 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    background-color: var(--light-beige);
+    background-color: var(--dark-blue);
+    /* background-color: var(--light-beige); */
     
     
   }
